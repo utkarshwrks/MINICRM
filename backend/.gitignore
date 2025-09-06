@@ -1,0 +1,11 @@
+# Ignore environment files
+.env
+config.json
+secret_keys.js
+
+# Ignore logs
+*.log
+
+# Ignore compiled files
+dist/
+build/
