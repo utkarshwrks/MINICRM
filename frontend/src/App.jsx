@@ -7,12 +7,14 @@ import CustomerDetail from "./pages/CustomerDetail";
 import Leads from "./pages/Leads";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Landing from "./pages/Landing";
 
 function App() {
   return (
     <AuthProvider>
       <Router>
         <Routes>
+          <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
@@ -42,7 +44,7 @@ function App() {
             }
           />
           <Route
-            path="/leads"
+            path="/customers/:id/leads"
             element={
               <ProtectedRoute>
                 <Leads />

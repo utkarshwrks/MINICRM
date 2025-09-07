@@ -18,6 +18,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/customers", customerRoutes);
 app.use("/api/customers", leadRoutes);
 
+
+
 app.get("/", (req, res) => {
   res.send("Mini CRM API is running...");
 });
