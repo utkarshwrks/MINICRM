@@ -38,5 +38,3 @@ This project is designed for learning and small-scale use, allowing users to man
 - Database → MongoDB Atlas
 
 ---
-
-## 📂 Project Structure
